@@ -26,6 +26,10 @@
     function getDenborak() {
       return $this->denborak;
     }
+
+    function getIzena() {
+      return $this->izena;
+    }
   }
 
 ?>
