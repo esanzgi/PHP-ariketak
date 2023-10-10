@@ -1,0 +1,62 @@
+{
+    "Eneko": [
+        {
+            "isan": "12345678",
+            "izena": "Game Of Thrones",
+            "urtea": "2003",
+            "puntuazioa": "5"
+        },
+        {
+            "isan": "12312312",
+            "izena": "Lord of Rings",
+            "urtea": "2002",
+            "puntuazioa": "3"
+        },
+        {
+            "isan": "11111111",
+            "izena": "Shrek",
+            "urtea": "2007",
+            "puntuazioa": "4"
+        }
+    ],
+    "Hodei": [
+        {
+            "isan": "88888888",
+            "izena": "Dunkerke",
+            "urtea": "2015",
+            "puntuazioa": "5"
+        },
+        {
+            "isan": "10101010",
+            "izena": "Superman",
+            "urtea": "2002",
+            "puntuazioa": "3"
+        },
+        {
+            "isan": "11223344",
+            "izena": "The Walking Dead",
+            "urtea": "2007",
+            "puntuazioa": "4"
+        },
+        {
+            "isan": "31313131",
+            "izena": "La Naranja Mec\u00e1nica",
+            "urtea": "2004",
+            "puntuazioa": "2"
+        }
+    ],
+    "Jon": [
+        {
+            "isan": "12121212",
+            "izena": "Barbie",
+            "urtea": "2023",
+            "puntuazioa": "1"
+        },
+        {
+            "isan": "13131313",
+            "izena": "Saw",
+            "urtea": "2010",
+            "puntuazioa": "3"
+        }
+    ]
+}
