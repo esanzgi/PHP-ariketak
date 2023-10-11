@@ -92,6 +92,7 @@
           if (!empty($izena) && !empty($urtea) && !empty($puntuazioa)) {
             // Gehitu erregistro berria erabiltzailearen zerrendara
             if(strlen($isan) === 8) {
+              
               $newFilm = [
                 'isan' => $isan,
                 'izena' => $izena,
@@ -112,13 +113,26 @@
         } else {
             echo '<p class="is-invalid">ISAN DAGOEN JADA LISTAN</p>';
         }
-        
 
         if(isset($izena) && empty($izena)) {
           echo '<p class="is-invalid">IZENA HUTSA</p>';
         }
         if(isset($isan) && empty($isan)) {
           echo '<p class="is-invalid">ISAN HUTSA</p>';
+        }
+
+        if (empty($isan) && !empty($izena)) {
+          echo "<h2>'$izena' izeneko pelikulak:</h2>";
+          echo "<ul>";
+          foreach ($data as $film) {
+            echo $izena.'<br>';
+              if (stripos($film['izena'], $izena) !== false) {
+                echo 'barruan';
+                  echo "<li>'" . $film['izena'] . "' " . $film['urtea'] . " urtekoa - Puntuazioa: " . $film['puntuazioa'] . "</li>";
+              }
+          }
+        
+          echo "</ul>";
         }
 
       }
