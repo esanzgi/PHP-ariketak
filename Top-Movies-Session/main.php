@@ -25,8 +25,12 @@
         echo "</table>";
       }
 
-      if(isset($_POST['username'])){
-        $username = $_POST['username'];
+      //sesioa hasi
+      session_start();
+
+      //Erabiltzailea sessioak dagoen frogatu
+      if(isset($_SESSION['username'])){
+        $username = $_SESSION['username'];
         $filmBerria = $_POST['filmBerria'];
 
         echo '<br><br>';
@@ -42,7 +46,6 @@
     ?>
     <h1>Film Formularioa</h1>
     <form action="main.php" method="POST">
-        <input type="hidden" name="username" value="<?php echo $username; ?>">
         <input type="hidden" name="filmBerria" value="true">
 
         <label for="izena">Filmaren Izena:</label>
